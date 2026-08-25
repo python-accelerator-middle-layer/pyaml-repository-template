@@ -2,4 +2,9 @@ _subdirectory: template
 
 package_name:
   type: str
-  help: Python package/import name
+  help: Python import package name
+
+display_name:
+  type: str
+  help: Human-readable package name used in documentation
+  default: "{{ package_name }}"

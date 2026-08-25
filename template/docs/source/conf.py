@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'template'
+project = "{{ display_name }}"
 copyright = '2026, pyAML Collaboration'
 author = 'pyAML Collaboration'
 
