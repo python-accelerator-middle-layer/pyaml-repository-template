@@ -1,0 +1,5 @@
+_subdirectory: template
+
+package_name:
+  type: str
+  help: Python package/import name
