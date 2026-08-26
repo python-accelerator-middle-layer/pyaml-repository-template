@@ -25,3 +25,13 @@ html_title:
     Title displayed in the HTML documentation,
     for example Python Accelerator Middle Layer
   default: "{{ package_name }}"
+
+use_docs_extra:
+  type: bool
+  help: >-
+    Install additional dependencies required to build the documentation.
+    These must be listed in the docs-extra optional dependency group
+    in pyproject.toml.
+    This does not include Sphinx dependencies. They are provided separately
+    by the template in docs/requirements.txt.
+  default: false
