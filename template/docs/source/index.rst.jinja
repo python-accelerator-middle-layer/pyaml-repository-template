@@ -1,10 +1,10 @@
 
-Welcome to {{ html_title }}'s documentation!
+Documentation for {{ html_title }}
 ================================================================================
 
+.. toctree::
+   :hidden:
 
-.. autosummary::
-   :toctree: api
-   :recursive:
+   api
 
-   {{ import_name }}
+.. include:: api/{{ import_name }}.rst
