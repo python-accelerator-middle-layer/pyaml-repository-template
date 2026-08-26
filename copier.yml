@@ -2,9 +2,26 @@ _subdirectory: template
 
 package_name:
   type: str
-  help: Python import package name
+  help: >-
+    Package name, for example pyaml-cs-oa
 
-display_name:
+distribution_name:
   type: str
-  help: Human-readable package name used in documentation
+  help: >-
+    PyPI package name used when installing the project,
+    for example accelerator-middle-layer
+  default: "{{ package_name }}"
+
+import_name:
+  type: str
+  help: >-
+    Python package name used in import statements.
+    Use underscores instead of hyphens, for example pyaml_cs_oa
+  default: "{{ package_name | replace('-', '_') }}"
+
+html_title:
+  type: str
+  help: >-
+    Title displayed in the HTML documentation,
+    for example Python Accelerator Middle Layer
   default: "{{ package_name }}"

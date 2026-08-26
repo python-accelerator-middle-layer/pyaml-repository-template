@@ -17,7 +17,7 @@ sys.path.insert(0, str(ROOT))
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "{{ display_name }}"
+project = "{{ html_title }}"
 copyright = '2026, pyAML Collaboration'
 author = 'pyAML Collaboration'
 
@@ -41,4 +41,4 @@ exclude_patterns = []
 
 html_theme = 'pydata_sphinx_theme'
 html_static_path = ['_static']
-html_title = "{{ display_name }}"
+html_title = "{{ html_title }}"
