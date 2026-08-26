@@ -35,3 +35,8 @@ use_docs_extra:
     This does not include Sphinx dependencies. They are provided separately
     by the template in docs/requirements.txt.
   default: false
+
+repository_url:
+  type: str
+  help: URL of the GitHub repository
+  default: "https://github.com/python-accelerator-middle-layer/{{ package_name }}"
