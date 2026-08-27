@@ -1,0 +1,50 @@
+# {{ html_title }}
+
+**Short one sentence description of {{ html_title }}**
+
+[![Documentation Status](https://readthedocs.org/projects/{{ package_name }}/badge/?version=latest)](https://{{ package_name }}.readthedocs.io/en/latest/?badge=latest)
+[![Current release](https://img.shields.io/github/v/tag/{{ repository_url | replace('https://github.com/', '') }})](https://github.com/{{ repository_url | replace('https://github.com/', '') }}/tags)
+
+## Overview
+
+<!-- Replace the paragraph below with a longer description of the package. -->
+
+Describe the purpose, scope, and main features of {{ html_title }} here.
+
+## Installation
+
+Install the package from PyPI:
+
+```bash
+pip install {{ distribution_name }}
+```
+
+## Development
+
+Install the development dependencies with:
+
+```bash
+pip install {{ distribution_name }}[dev]
+```
+
+Run the test suite with:
+
+```bash
+pytest
+```
+
+Install the pre-commit hooks with:
+
+```bash
+pre-commit install
+```
+
+## Documentation
+
+The documentation is available at:
+
+<https://{{ package_name }}.readthedocs.io/en/latest/>
+
+## Contributing
+
+Please use the issue tracker or submit a pull request.
